@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223b673d-7462-4cca-8bd7-68a51a10a157" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_8_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkatestproject.iml" afterPath="$PROJECT_DIR$/kafkatestproject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaConsumer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/Starter.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/Starter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaConsumerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaConsumerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaProducerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaProducerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,7 +22,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SimpleKafkaConsumerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaConsumerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="61" column="69" lean-forward="false" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
+              <folding>
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#972#973#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,6 +49,7 @@
     <findStrings>
       <find>init</find>
       <find>initTransactions</find>
+      <find>difiableRandomAcces</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -42,17 +63,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/MyTestKafkaProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/MyTestKafkaConsumer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/ProducerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/ConsumerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaConsumer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/Starter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/Quiz.java" />
         <option value="$PROJECT_DIR$/src/main/resources/producer.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/consumer.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaConsumer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaProducerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/Starter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaConsumerTest.java" />
       </list>
     </option>
@@ -83,8 +105,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -101,8 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -187,12 +207,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="SearchEverywhereHistoryKey" value="mockconsumer&#9;FILE&#9;jar://C:/Users/Glebio/.m2/repository/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/MockConsumer.java&#10;kafkapro&#9;FILE&#9;jar://C:/Users/Glebio/.m2/repository/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/KafkaProducer.java" />
+    <property name="SearchEverywhereHistoryKey" value="Assert&#9;PSI&#9;JAVA://org.testng.Assert&#10;mockconsumer&#9;FILE&#9;jar://C:/Users/Glebio/.m2/repository/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/MockConsumer.java&#10;kafkapro&#9;FILE&#9;jar://C:/Users/Glebio/.m2/repository/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/KafkaProducer.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -215,38 +237,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SimpleKafkaProducerTest.testProducer">
-    <configuration name="SimpleKafkaConsumerTest.testConsumer" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SimpleKafkaConsumerTest.testSimpleConsumer">
+    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.epam.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="kafkatestproject" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.Quiz" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.epam" />
-      <option name="MAIN_CLASS_NAME" value="com.epam.SimpleKafkaConsumerTest" />
-      <option name="METHOD_NAME" value="testConsumer" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <module name="kafkatestproject" />
       <envs />
-      <properties />
-      <listeners />
     </configuration>
     <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -445,18 +454,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Starter" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.SimpleKafkaConsumerTest.testConsumer" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer2" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.SimpleKafkaConsumerTest.testSimpleConsumer" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer2" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.SimpleKafkaConsumerTest.testSimpleConsumer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Quiz" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.SimpleKafkaConsumerTest.testSimpleConsumer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer2" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.SimpleKafkaConsumerTest.testConsumer" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.SimpleKafkaConsumerTest.testSimpleConsumer" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Quiz" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Starter" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.SimpleKafkaProducerTest.testProducer2" />
       </list>
     </recent_temporary>
   </component>
@@ -477,60 +486,61 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 01m 14s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 00h 36m 14s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 04m 51s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 00h 36m 50s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 06m 44s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 00h 43m 08s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 06m 54s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 00h 46m 03s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 07m 04s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 00h 46m 58s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 07m 11s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 11h 23m 56s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 18m 51s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 12h 04m 16s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 29m 35s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 12h 06m 45s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.08 at 11h 31m 00s.xml">
+    <history-entry file="SimpleKafkaConsumerTest_testSimpleConsumer - 2017.08.11 at 12h 07m 04s.xml">
       <configuration name="SimpleKafkaConsumerTest.testSimpleConsumer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimpleKafkaProducerTest_testProducer - 2017.08.08 at 11h 31m 36s.xml">
+    <history-entry file="SimpleKafkaProducerTest_testProducer - 2017.08.11 at 12h 04m 08s.xml">
       <configuration name="SimpleKafkaProducerTest.testProducer" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6454849" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27836612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033049" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34795764" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -544,39 +554,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaConsumerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaProducerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaProducerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,9 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -610,9 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,9 +609,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -638,9 +617,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,9 +639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,9 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,34 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/ProducerRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="55" column="11" lean-forward="false" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/ConsumerRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/OffsetResetStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -772,24 +715,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/MockProducer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2793">
-          <caret line="169" column="7" lean-forward="true" selection-start-line="169" selection-start-column="7" selection-end-line="169" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/consumer.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="290">
+          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
+        <state relative-caret-position="499">
           <caret line="3798" column="30" lean-forward="false" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
           <folding>
             <element signature="e#177013#177014#0" expanded="false" />
@@ -798,100 +733,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/ConsumerRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="609" column="13" lean-forward="false" selection-start-line="609" selection-start-column="13" selection-end-line="609" selection-end-column="13" />
+          <folding>
+            <element signature="e#24298#24299#0" expanded="false" />
+            <element signature="e#24363#24364#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/ProducerRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/MockProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="172" column="51" lean-forward="false" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/MockConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="174" column="32" lean-forward="false" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.pom" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/Assertions.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/Assertions.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10-sources.jar!/org/testng/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="531" column="21" lean-forward="false" selection-start-line="531" selection-start-column="21" selection-end-line="531" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1353">
+          <caret line="1285" column="30" lean-forward="false" selection-start-line="1285" selection-start-column="30" selection-end-line="1285" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/producer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="837" column="16" lean-forward="false" selection-start-line="837" selection-start-column="16" selection-end-line="837" selection-end-column="16" />
+        <state relative-caret-position="-517">
+          <caret line="943" column="69" lean-forward="false" selection-start-line="943" selection-start-column="69" selection-end-line="943" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="179">
+          <caret line="70" column="33" lean-forward="false" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/Assert.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/common/TopicPartition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+        <state relative-caret-position="152">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10-sources.jar!/org/testng/Assert.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/ConsumerRecords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Quiz.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Starter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/ListAssert.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/consumer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/producer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        <state relative-caret-position="456">
+          <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/SimpleKafkaProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/common/TopicPartition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.1.0/kafka-clients-0.10.1.0-sources.jar!/org/apache/kafka/clients/consumer/MockConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="246" column="16" lean-forward="false" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/producer.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="207">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaProducerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="456">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/SimpleKafkaConsumerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="456">
+          <caret line="61" column="69" lean-forward="false" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
           <folding>
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
           </folding>
         </state>
       </provider>

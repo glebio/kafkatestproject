@@ -5,21 +5,26 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.MockConsumer;
 import org.apache.kafka.clients.consumer.OffsetResetStrategy;
 import org.apache.kafka.common.TopicPartition;
-import org.apache.kafka.common.record.TimestampType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SimpleKafkaConsumerTest {
+
+    private final static Logger LOGGER = LoggerFactory.getLogger(SimpleKafkaConsumer.class);
 
     private MockConsumer<String, String> consumer;
 
     private static final String TOPIC = "my_topic";
+
+    public List<ConsumerRecord<String, String>> expected;
+
 
     @BeforeMethod
     public void setUp() {
@@ -30,37 +35,43 @@ public class SimpleKafkaConsumerTest {
     @Test
     public void testSimpleConsumer() {
 
-        consumer.assign(Arrays.asList(new TopicPartition(TOPIC, 0)));
+        SimpleKafkaConsumer myTestConsumer = new SimpleKafkaConsumer(TOPIC);
+        myTestConsumer.myConsumer = consumer;
+
+        //prepare "expected" data
+        expected = Arrays.asList(
+                new ConsumerRecord<String, String>(TOPIC, 0,
+                        0L, "0", "message 0"),
+                new ConsumerRecord<String, String>(TOPIC, 0,
+                        1L, "1", "message 1"),
+                new ConsumerRecord<String, String>(TOPIC, 0,
+                        2L, "2", "message 2"));
+
+        //prepare mock data
+        TopicPartition topicPartition = new TopicPartition(TOPIC, 0);
+        consumer.assign(Collections.singletonList(topicPartition));
 
         HashMap<TopicPartition, Long> beginningOffsets = new HashMap<>();
-        beginningOffsets.put(new TopicPartition(TOPIC, 0), 0L);
+        beginningOffsets.put(topicPartition, 0L);
         consumer.updateBeginningOffsets(beginningOffsets);
 
-        ConsumerRecord<String, String> rec1 = new ConsumerRecord<String, String>(TOPIC, 0,
-                0L, "0", "message 0");
-        ConsumerRecord<String, String> rec2 = new ConsumerRecord<String, String>(TOPIC, 0,
-                1L, "1", "message 1");
-        ConsumerRecord<String, String> rec3 = new ConsumerRecord<String, String>(TOPIC, 0,
-                2L, "2", "message 2");
-        ConsumerRecord<String, String> rec4 = new ConsumerRecord<String, String>(TOPIC, 0,
-                3L, "3", "message 3");
+        consumer.addRecord(new ConsumerRecord<String, String>(TOPIC, 0,
+                0L, "0", "message 0"));
+        consumer.addRecord(new ConsumerRecord<String, String>(TOPIC, 0,
+                1L, "1", "message 1"));
+        consumer.addRecord(new ConsumerRecord<String, String>(TOPIC, 0,
+                2L, "2", "message 2"));
+        myTestConsumer.myConsumer = consumer;
 
-        consumer.addRecord(rec1);
-        consumer.addRecord(rec2);
-        consumer.addRecord(rec3);
-        consumer.addRecord(rec4);
+        //execution consumeData method
+        ConsumerRecords<String, String> actualRecords = myTestConsumer.consumeData(5_000);
 
+        //get the records for the given partition
+        List<ConsumerRecord<String, String>> actualList = actualRecords.records(topicPartition);
+        //get ArrayList from UnmodifiableCollection
+        List<ConsumerRecord<String, String>> actual = new ArrayList<>(Collections.unmodifiableCollection(actualList));
 
-        ConsumerRecords<String, String> recs = consumer.poll(1);
-        Iterator<ConsumerRecord<String, String>> iter = recs.iterator();
-
-        Assert.assertEquals(iter.next(), rec1);
-        Assert.assertEquals(iter.next(), rec2);
-        Assert.assertEquals(iter.next(), rec3);
-        Assert.assertEquals(iter.next(), rec4);
-        Assert.assertFalse(iter.hasNext());
-
-        //method "position" uses get the offset of the next record that will be fetched
-        Assert.assertEquals(consumer.position(new TopicPartition(TOPIC, 0)), 4L);
+        assertThat(actual).isEqualTo(expected);
     }
+
 }

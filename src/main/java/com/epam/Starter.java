@@ -18,6 +18,7 @@ public class Starter {
             LOGGER.error("", ex);
         }
 
+
         SimpleKafkaConsumer simpleKafkaConsumer = new SimpleKafkaConsumer(TOPIC);
         try {
             simpleKafkaConsumer.consumeData(5_000);

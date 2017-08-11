@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Properties;
 
 public class SimpleKafkaConsumer {
@@ -31,22 +32,15 @@ public class SimpleKafkaConsumer {
             e.printStackTrace();
         }
         myConsumer = new KafkaConsumer<String, String>(properties);
-        myConsumer.subscribe(Arrays.asList(topic));
+        myConsumer.subscribe(Collections.singletonList(topic));
         LOGGER.info("init OK");
     }
 
-    void consumeData(long ttl) {
+    ConsumerRecords<String, String> consumeData(long ttl) {
         LOGGER.info("consume messages");
-        long start = System.currentTimeMillis();
-        while (System.currentTimeMillis() - start <= ttl) {
-            ConsumerRecords<String, String> records = myConsumer.poll(ttl / 50);
-            for (ConsumerRecord<String, String> record : records) {
-                LOGGER.info(" <- message consumed: {key = {}, value = {}}", record.key(), record.value());
-            }
-        }
-        myConsumer.close();
-        LOGGER.info("consume messages done");
-        LOGGER.info("consumer closed");
+        ConsumerRecords<String, String> records = myConsumer.poll(5_000);
+        return records;
     }
+
 
 }

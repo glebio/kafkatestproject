@@ -36,9 +36,9 @@ public class SimpleKafkaProducerTest {
         List<ProducerRecord<String, String>> actual = producer.history();
 
         List<ProducerRecord<String, String>> expected = Arrays.asList(
-                new ProducerRecord<String, String>("my_topic", "1", "message 1"),
-                new ProducerRecord<String, String>("my_topic", "2", "message 2"),
-                new ProducerRecord<String, String>("my_topic", "3", "message 3"));
+                new ProducerRecord<String, String>(TOPIC, "1", "message 1"),
+                new ProducerRecord<String, String>(TOPIC, "2", "message 2"),
+                new ProducerRecord<String, String>(TOPIC, "3", "message 3"));
 
         Assert.assertEquals(actual, expected);
     }
