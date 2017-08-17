@@ -13,7 +13,7 @@ public class Starter {
 
         SimpleKafkaProducer simpleKafkaProducer = new SimpleKafkaProducer(TOPIC);
         try {
-            simpleKafkaProducer.sendData(5_000);
+            simpleKafkaProducer.sendData(5_000, 10, 1);
         } catch (Exception ex) {
             LOGGER.error("", ex);
         }
@@ -25,5 +25,6 @@ public class Starter {
         } catch (Exception ex) {
             LOGGER.error("", ex);
         }
+
     }
 }

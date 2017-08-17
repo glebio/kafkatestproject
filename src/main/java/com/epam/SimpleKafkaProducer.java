@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 
 public class SimpleKafkaProducer {
 
@@ -32,10 +33,12 @@ public class SimpleKafkaProducer {
         LOGGER.info("init OK");
     }
 
-    void sendData(long ttl) throws InterruptedException {
+    void sendData(long ttl, int max, int min) throws InterruptedException {
         LOGGER.info("send messages");
-        for (int j = 1; j < 4; j++) {
-            String key = Integer.toString(j);
+        Random rand = new Random();
+        for (int i = 0; i < max; i++) {
+            int randomNum = rand.nextInt((max - min) + 1) + min;
+            String key = Integer.toString(randomNum);
             String value = "message " + key;
             myProducer.send(new ProducerRecord<>(topic, key, value));
             LOGGER.info(" -> message sent: {key = {}, value = {}}", key, value);

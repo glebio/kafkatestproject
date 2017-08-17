@@ -55,23 +55,22 @@ public class SimpleKafkaConsumerTest {
         beginningOffsets.put(topicPartition, 0L);
         consumer.updateBeginningOffsets(beginningOffsets);
 
-        consumer.addRecord(new ConsumerRecord<String, String>(TOPIC, 0,
-                0L, "0", "message 0"));
-        consumer.addRecord(new ConsumerRecord<String, String>(TOPIC, 0,
-                1L, "1", "message 1"));
-        consumer.addRecord(new ConsumerRecord<String, String>(TOPIC, 0,
-                2L, "2", "message 2"));
-        myTestConsumer.myConsumer = consumer;
+
+        consumer.addRecord(expected.get(0));
+        consumer.addRecord(expected.get(1));
+        consumer.addRecord(expected.get(2));
+
 
         //execution consumeData method
         ConsumerRecords<String, String> actualRecords = myTestConsumer.consumeData(5_000);
 
-        //get the records for the given partition
-        List<ConsumerRecord<String, String>> actualList = actualRecords.records(topicPartition);
-        //get ArrayList from UnmodifiableCollection
-        List<ConsumerRecord<String, String>> actual = new ArrayList<>(Collections.unmodifiableCollection(actualList));
+        assertThat(actualRecords).containsAll(expected);
 
-        assertThat(actual).isEqualTo(expected);
     }
+
+
+
+
+
 
 }

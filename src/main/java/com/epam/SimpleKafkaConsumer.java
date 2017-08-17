@@ -39,8 +39,8 @@ public class SimpleKafkaConsumer {
     ConsumerRecords<String, String> consumeData(long ttl) {
         LOGGER.info("consume messages");
         ConsumerRecords<String, String> records = myConsumer.poll(5_000);
+        myConsumer.close();
         return records;
     }
-
 
 }
