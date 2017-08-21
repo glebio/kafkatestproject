@@ -14,9 +14,7 @@ import java.util.Properties;
 
 public class SimpleKafkaConsumer {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(SimpleKafkaProducer.class);
-
-    private final String topic;
+    private final static Logger LOGGER = LoggerFactory.getLogger(SimpleKafkaConsumer.class);
 
     private Properties properties;
 
@@ -24,7 +22,6 @@ public class SimpleKafkaConsumer {
 
     public SimpleKafkaConsumer(String topic) {
         LOGGER.info("init");
-        this.topic = topic;
         properties = new Properties();
         try {
             properties.load(SimpleKafkaConsumer.class.getResourceAsStream("/consumer.properties"));
@@ -38,9 +35,26 @@ public class SimpleKafkaConsumer {
 
     ConsumerRecords<String, String> consumeData(long ttl) {
         LOGGER.info("consume messages");
-        ConsumerRecords<String, String> records = myConsumer.poll(5_000);
-        myConsumer.close();
-        return records;
+        ConsumerRecords<String, String> records;
+        ConsumerRecords<String, String> resultRecords = null;
+        try {
+            while (true) {
+                records = myConsumer.poll(ttl);
+                for (ConsumerRecord<String, String> record : records) {
+                    LOGGER.info(" <- message consumed: {offset = {}, key = {}, value = {}}", record.offset(), record.key(), record.value());
+                }
+                if (records.isEmpty()) {
+                    break;
+                }
+                resultRecords = records;
+            }
+        } catch (Exception e) {
+            LOGGER.error("Unexpected error " + e);
+        } finally {
+            LOGGER.info("consumer closed");
+            myConsumer.close();
+        }
+        return resultRecords;
     }
 
 }

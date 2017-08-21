@@ -28,7 +28,7 @@ public class SimpleKafkaProducerTest {
         simpleKafkaProducer.myProducer = producer;
 
         try {
-            simpleKafkaProducer.sendData(5_000, 10, 1);
+            simpleKafkaProducer.sendData(10, 1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

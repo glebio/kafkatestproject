@@ -33,7 +33,7 @@ public class SimpleKafkaProducer {
         LOGGER.info("init OK");
     }
 
-    void sendData(long ttl, int max, int min) throws InterruptedException {
+    void sendData(int max, int min) throws InterruptedException {
         LOGGER.info("send messages");
         Random rand = new Random();
         for (int i = 0; i < max; i++) {
@@ -42,7 +42,7 @@ public class SimpleKafkaProducer {
             String value = "message " + key;
             myProducer.send(new ProducerRecord<>(topic, key, value));
             LOGGER.info(" -> message sent: {key = {}, value = {}}", key, value);
-            Thread.sleep(ttl / 50);
+            //Thread.sleep(ttl / 50);
         }
         myProducer.close();
         LOGGER.info("send messages done");
