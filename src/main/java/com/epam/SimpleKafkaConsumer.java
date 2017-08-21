@@ -8,9 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Properties;
+import java.util.*;
 
 public class SimpleKafkaConsumer {
 
@@ -33,20 +31,20 @@ public class SimpleKafkaConsumer {
         LOGGER.info("init OK");
     }
 
-    ConsumerRecords<String, String> consumeData(long ttl) {
+    List<ConsumerRecord<String, String>> consumeData(long ttl) {
         LOGGER.info("consume messages");
         ConsumerRecords<String, String> records;
-        ConsumerRecords<String, String> resultRecords = null;
+        List<ConsumerRecord<String, String>> buffer = new ArrayList<>();
         try {
             while (true) {
                 records = myConsumer.poll(ttl);
                 for (ConsumerRecord<String, String> record : records) {
                     LOGGER.info(" <- message consumed: {offset = {}, key = {}, value = {}}", record.offset(), record.key(), record.value());
+                    buffer.add(record);
                 }
                 if (records.isEmpty()) {
                     break;
                 }
-                resultRecords = records;
             }
         } catch (Exception e) {
             LOGGER.error("Unexpected error " + e);
@@ -54,7 +52,6 @@ public class SimpleKafkaConsumer {
             LOGGER.info("consumer closed");
             myConsumer.close();
         }
-        return resultRecords;
+        return buffer;
     }
-
 }

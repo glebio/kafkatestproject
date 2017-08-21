@@ -62,7 +62,7 @@ public class SimpleKafkaConsumerTest {
 
 
         //execution consumeData method
-        ConsumerRecords<String, String> actualRecords = myTestConsumer.consumeData(5_000);
+        List<ConsumerRecord<String, String>> actualRecords = myTestConsumer.consumeData(5_000);
 
         assertThat(actualRecords).containsAll(expected);
 

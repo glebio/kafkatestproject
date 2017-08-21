@@ -5,6 +5,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.TreeSet;
 
 public class MissingElementsFinder {
@@ -17,7 +18,7 @@ public class MissingElementsFinder {
 
         SimpleKafkaConsumer myTestConsumer = new SimpleKafkaConsumer(topic);
 
-        ConsumerRecords<String, String> actualRecords = myTestConsumer.consumeData(5_000);
+        List<ConsumerRecord<String, String>> actualRecords = myTestConsumer.consumeData(5_000);
 
         for (ConsumerRecord<String, String> record : actualRecords) {
             set.add(Integer.parseInt(record.key()));
