@@ -42,12 +42,10 @@ public class SimpleKafkaConsumer {
                     LOGGER.info(" <- message consumed: {offset = {}, key = {}, value = {}}", record.offset(), record.key(), record.value());
                     buffer.add(record);
                 }
-                myConsumer.commitAsync();
                 if (records.isEmpty()) {
                     break;
                 }
             }
-            myConsumer.commitSync();
         } catch (Exception e) {
             LOGGER.error("Unexpected error " + e);
         } finally {
